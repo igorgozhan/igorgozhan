@@ -1,0 +1,287 @@
+html {
+  height: 100%;
+}
+BODY {
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #111111;
+  background: #ffffff;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+
+img,
+table {
+  border: 0px;
+}
+
+a {
+  color: #5a61ed;
+}
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: left;
+  color: #111111;
+  margin: 0px 0px 0em;
+}
+
+.container {
+}
+
+.wraper {
+  width: 100%;
+  max-width: 665px;
+  margin: 0px auto;
+  box-shadow: 0px 0px 3px #dedede;
+}
+.container > .wraper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: stretch;
+}
+
+.wraper .leftColl {
+  width: 21%;
+  background-color: #5a61ed;
+  color: #ffffff;
+  position: relative;
+  min-height: 100%;
+}
+.wraper .leftColl p {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 63px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  margin: 0px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.wraper .leftColl p.singup {
+  bottom: 1.42em;
+  right: -0.9em;
+}
+
+.row {
+  padding: 0px 3.7%;
+}
+
+.row.top {
+}
+.row.top > .wraper {
+}
+
+.wraper .centerColl {
+  width: 79%;
+  min-height: 480px;
+  position: relative;
+  overflow: hidden;
+}
+
+.wraper .centerColl .bg{
+  position: absolute;
+  z-index: -1;
+  right: -20%;
+  bottom: -14%;
+}
+
+.wraper .centerColl > .row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: space-around;
+  align-items: stretch;
+  height: 100%;
+}
+
+
+
+.wraper .centerColl .content {
+  padding: 2.9em 0px 1em;
+  flex-grow: 2;
+}
+
+.wraper .centerColl[data-step="1"] .content.step2{
+  display:none;
+}
+.wraper .centerColl[data-step="2"] .content.step1, .wraper .centerColl[data-step="2"] .bg{
+  display:none;
+}
+
+.wraper .centerColl[data-step="2"] .content.step2{
+  display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: space-around;
+    align-items: stretch;
+    padding-left: 2.8em;
+    padding-top: 6.7em;
+}
+
+
+.wraper .centerColl .content p.about {
+  margin: 0px 0px 1em;
+}
+.wraper .centerColl[data-step="2"] .content.step2 p.about{
+  margin-top: 0.8em;
+}
+
+
+.cellBlock {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: stretch;
+  margin: 1.23em 0px 0px 0px;
+}
+
+.cellBlock .cell {
+  width: 48.8%;
+}
+
+.cellBlock .cell p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #7c7c7c;
+  margin: 0px;
+}
+
+.cellBlock .cell .fe {
+  display: block;
+  width: 100%;
+  background: none;
+  border: 0px;
+  border-bottom: 1px solid #f2f2f2;
+  font-size: 14px;
+  line-height: 1.95em;
+  color: inherit;
+  padding: 0px;
+  outline: 0;
+  outline-offset: 0;
+  position: relative;
+}
+
+.cellBlock .cell .fe.valid {
+  background:url("img/chekOK.svg") no-repeat 99% 50%;
+}
+.cellBlock .cell .fe.error {
+  border-bottom: 1px solid #FF2828;
+  box-shadow: inset 0px -1px 0px #FF2828;
+  color: #FF2828;
+}
+
+.dateCells {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+}
+
+.dateCellsDay {
+  width: 25%;
+}
+.dateCellsMonth {
+  width: 40%;
+}
+.dateCellsYear {
+  width: 30%;
+}
+
+.genderCells {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: stretch;
+}
+
+.genderCells .cell:nth-child(1) {
+  width: 29%;
+}
+
+.wraper .centerColl .foot {
+  padding: 0px 0px 2.47em;
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: center;
+}
+
+.wraper .centerColl[data-step="2"] .foot{
+  padding: 0px 0px 3.3em;
+}
+
+.wraper .centerColl .foot p {
+  margin: 0px;
+  font-size: inherit;
+}
+
+.wraper .centerColl .foot .btn {
+  background-color: #5a61ed;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 2.3em;
+  padding: 0px 1.44em;
+  white-space: nowrap;
+}
+.wraper .centerColl .foot .btn.disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.wraper .centerColl[data-step="2"] .foot .btn {
+  display: none;
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  .wraper .centerColl .content{
+    padding-bottom: 2em;
+  }
+
+  .cellBlock{
+    display: block;
+  }
+  .cellBlock .cell{
+    width: auto;
+    margin-top: 1em;
+  }
+
+}
+@media screen and (min-width: 0px) and (max-width: 450px) {
+  .wraper .centerColl .foot{
+    flex-direction: column-reverse;
+  }
+  .wraper .centerColl .foot p{
+    margin-top: 1em;
+  }
+}
